@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffe6f0;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #ff99cc;
+    color: white;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #ff66b2;
+    padding: 15px 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+main {
+    margin-top: 40px;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto 30px;
+}
+
+section {
+    margin: 40px 0;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ff66b2;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item {
+    width: 30%;
+    padding: 20px;
+    background-color: #ffe6f0;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    color: #ff66b2;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #ff66b2;
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.service-item img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px; /* Adds space between the text and image */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    transition: transform 0.3s ease;
+}
+
+.service-item img:hover {
+    transform: scale(1.05);
+}
+
+.service-item img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px; /* Adds space between the text and image */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    transition: transform 0.3s ease;
+}
+
+.service-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Index */
+
+#about {
+    margin-bottom: 30px;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#header span {
+    display: inline-block;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Reduced movement for a subtler effect */
+    }
+}
+
+/* Contact Us */ 
+
+textarea {
+    width: 40%;
+    height: 150px; /* Adjust as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Optional: remove or adjust for sharp corners */
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    resize: vertical; /* Allow users to resize vertically only */
+}
+
+/* Success Stories */
+
+/* General Container Styling */
+.container {
+    text-align: center; /* Centers all text and images inside the container */
+    margin: 0 auto; /* Ensures container stays centered */
+}
+
+/* Success Story Article Styling */
+.success-story {
+    margin-bottom: 30px; /* Adds space between articles */
+    max-width: 600px; /* Limits the width of each article */
+    margin-left: auto; /* Centers each article */
+    margin-right: auto;
+}
+
+/* Success Story Image Styling */
+.success-image {
+    width: 100%; /* Makes the image responsive */
+    max-width: 300px; /* Ensures all images have the same max size */
+    height: auto; /* Maintains the image aspect ratio */
+    border-radius: 15px; /* Adds soft corners to the images */
+    border: 3px solid #ddd; /* Adds a soft border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Image Hover Effect */
+.success-image:hover {
+    transform: scale(1.05); /* Enlarges image slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deepens shadow on hover */
+}
+
+/* Heading and Paragraph Styling */
+.success-story h3 {
+    font-size: 1.5em;
+    color: #333; /* Darker color for contrast */
+}
+
+.success-story p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666; /* Softer color for readability */
+}
+
+/* Programs and Plans */
+
+#ourprograms {
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Price Box Styling */
+.price-box {
+    background-color: #f5f5f5; /* Light gray background */
+    border: 2px solid #ddd;   /* Subtle border */
+    border-radius: 5px;       /* Rounded corners */
+    padding: 10px;
+    text-align: center;
+    width: fit-content;       /* Size fits content */
+    margin: 10px auto;        /* Center the box horizontally */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animation */
+}
+
+/* Hover Effect */
+.price-box:hover {
+    transform: scale(1.05);    /* Slight zoom-in effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    background-color: #f9f9f9; /* Slightly lighter background */
+}
+
+/* Resources */
+   
+.resource-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-box h3 {
+    margin: 0 0 10px;
+}
+
+.resource-box p {
+    margin: 0;
+}
+
+/* Hover effect */
+.resource-box:hover {
+    background-color: #ffe6f0; /* Light blue background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow */
+    transform: scale(1.02); /* Slightly enlarge the box */
+}
+
+.resource-box:hover h3 a {
+    color: #0073e6; /* Change link color on hover */
+    text-decoration: underline;
+}

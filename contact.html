@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page that appears in the browser tab -->
+    <title>OzempNic - Contact Us</title>
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript to handle form submission and display the success message -->
+    <script>
+        function showMessage() {
+            // Display a popup message saying "Message Sent!"
+            alert("Message Sent!");
+
+            // Reset the form fields after the message is shown
+            document.getElementById("contact-form").reset();
+            
+            // Prevent the form from being actually submitted for demonstration purposes
+            return false; 
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Header section with the page title and description -->
+    <header>
+        <div class="container">
+            <!-- Main heading of the contact page -->
+            <h1>Contact Us</h1>
+            <!-- Description or subheading under the main title -->
+            <p>We’re here to help with your weight loss journey!</p>
+        </div>
+    </header>
+
+    <!-- Navigation bar with links to other pages on the website -->
+    <nav>
+        <ul>
+            <!-- List of navigation links -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs-plans.html">Programs/Plans</a></li>
+            <li><a href="success-stories.html">Success Stories</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content section where the contact form is displayed -->
+    <main>
+        <section class="container">
+            <!-- Heading for the section -->
+            <h2>Get in Touch</h2>
+            <!-- Instructions or description for the user -->
+             <!-- Padding to gap the text between instructions and name -->
+            <p style="padding-bottom: 20px;">If you have any questions, feedback, or need support, feel free to contact us. We'd love to hear from you!</p>
+
+            <!-- Form for users to fill out their contact details -->
+            <form id="contact-form" onsubmit="return showMessage()">
+                <!-- Input field for the user's name -->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+
+                <!-- Input field for the user's email address -->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+
+                <!-- Textarea for the user to type their message -->
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea><br><br>
+
+                <!-- Submit button to send the message -->
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section with contact information -->
+    <footer>
+        <div class="container">
+            <!-- Email link for direct contact -->
+            <p>Contact us directly at <a href="mailto:info@ozempnic.com">info@ozempnic.com</a></p>
+            <!-- Copyright message -->
+            <p>&copy; 2024 OzempNic. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
